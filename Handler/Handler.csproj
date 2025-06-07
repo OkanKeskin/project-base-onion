@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="CommandHandlers\" />
+      <Folder Include="QueryHandlers\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Business\Business.csproj" />
+      <ProjectReference Include="..\Domain\Domain.csproj" />
+      <ProjectReference Include="..\Core\Core.csproj" />
+    </ItemGroup>
+
+</Project>

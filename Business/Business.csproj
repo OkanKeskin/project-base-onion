@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Adapters\" />
+      <Folder Include="Builders\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AWSSDK.S3" Version="3.7.416.5" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.3" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.1.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Domain\Domain.csproj" />
+      <ProjectReference Include="..\Core\Core.csproj" />
+    </ItemGroup>
+
+</Project>

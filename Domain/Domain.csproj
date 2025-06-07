@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="11.11.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.3.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+      <PackageReference Include="Microsoft.Extensions.Localization" Version="9.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Localization\Localization.csproj" />
+      <ProjectReference Include="..\Common\Common.csproj" />
+    </ItemGroup>
+
+</Project>
